@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaquille's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Sticky Navbar -->
+  <header class="navbar">
+    <nav>
+      <ul>
+        <!-- Navbar links to different sections of the page -->
+        <li><a href="#welcome">Welcome</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Welcome Section -->
+  <section id="welcome" class="welcome-section">
+    <h1>Shaquille Muhammad Uddin</h1>
+    <div class="welcome-content">
+      <!-- Circular profile image -->
+      <div class="image-container">
+        <img src="shaqimg.jpg" alt="Shaquille Muhammad Uddin" class="profile-image">
+      </div>
+      <!-- Welcome message -->
+      <p>Welcome to my portfolio website! This website presents my coursework over the three years where I attended university.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2>About Me</h2>
+    <p>
+      <!-- Brief bio with education details -->
+      I attended Goldsmiths University of London for an undergraduate degree in Computer Science. Upon starting my studies at the university, I learned programming languages and skills such as JavaScript, HTML, CSS, and Java. Before university, I had no prior coding experience. 
+    </p>
+  </section>
+
+  <!-- Work Section -->
+  <section id="work" class="work-section">
+    <h2>My Work</h2>
+
+    <!-- Programming Modules -->
+    <div class="work-categories">
+      <h3>Programming Modules</h3>
+      <button id="introtoprogrammingButton">Introduction to Programming</button>
+      <button id="javaIndustryButton">Java for Industry</button>
+      <button id="extendedJavaButton">Extended Java</button>
+    </div>
+
+    <!-- Algorithm & Problem Solving -->
+    <div class="work-categories">
+      <h3>Algorithm & Problem Solving</h3>
+      <button id="algorithm1Button">Algorithm 1</button>
+      <button>Algorithm 2</button>
+      <button id="psfcsButton">Problem Solving for Computer Science</button>
+    </div>
+
+    <!-- Computing Projects -->
+    <div class="work-categories">
+      <h3>Computing Projects</h3>
+      <button id="computingProject1Button">Computing Project 1</button>
+      <button id="computingProject2Button">Computing Project 2</button>
+    </div>
+
+    <!-- Graphics -->
+    <div class="work-categories">
+      <h3>Graphics</h3>
+      <button id="graphicsButton">Graphics</button>
+    </div>
+
+    <!-- Web Development & Databases -->
+    <div class="work-categories">
+      <h3>Web Development & Databases</h3>
+      <button id="frontEndWebButton">Front End Web</button>
+      <button id="dynamicWebButton">Dynamic Web</button>
+      <button id="databasesButton">Databases and The Web</button>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <!-- Email and GitHub contact links -->
+    <button onclick="window.location.href='mailto:shaquilleuddin@gmail.com'">Main Email</button>
+    <button onclick="window.location.href='mailto:suddi006@campus.goldsmiths.ac.uk'">University Email</button>
+    <button onclick="window.location.href='https://github.com/ShaquilleUddin'">GitHub</button>
+  </section>
+
+  <!-- Floating Scroll-to-Top Button -->
+  <button id="scrollToTopBtn" title="Back to Top">↑</button>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>&copy; 2025 Shaquille Muhammad Uddin. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript for interactivity -->
+  <script src="scrolltotop.js"></script>
+  <script src="download.js"></script>
+</body>
+</html>
