@@ -101,25 +101,25 @@ function downloadFiles(filePaths) {
     }
   });
   
-  // Databases and The Web (open multiple links in new tabs)
-  document.getElementById('databasesButton').addEventListener('click', function () {
-    if (confirm('Do you want to open all Databases and The Web resources?')) {
-      const links = [
-        'https://www.doc.gold.ac.uk/usr/159/',
-        'https://www.doc.gold.ac.uk/usr/159/api/games',
-        'https://github.com/ShaquilleUddin/shaqsgamestore',
-      ];
-      links.forEach((url) => {
-        window.open(url, '_blank');
-      });
-    }
+// Databases and The Web (open multiple links in new tabs)
+document.getElementById('databasesButton').addEventListener('click', function () {
+  if (confirm('Do you want to open all Databases and The Web resources?')) {
+    const links = [
+      'https://www.doc.gold.ac.uk/usr/159/',
+      'https://www.doc.gold.ac.uk/usr/159/api/games',
+      'https://github.com/ShaquilleUddin/shaqsgamestore',
+    ];
+    links.forEach((url) => {
+      window.open(url, '_blank');
+    });
+  }
+});
 
-  // Final Project in Computer Science
-  document.getElementById('finalProjectButton').addEventListener('click', function () {
-    if (confirm('Do you want to download all Final Project in Computer Science files?')) {
-      downloadFiles([
-        './Downloads/CalculockedFinalReport.pdf',
-      ]);
-    }
-  });
+// Final Project in Computer Science (corrected placement)
+document.getElementById('finalProjectButton').addEventListener('click', function () {
+  if (confirm('Do you want to download all Final Project in Computer Science files?')) {
+    downloadFiles([
+      './Downloads/CalculockedFinalReport.pdf',
+    ]);
+  }
 });
