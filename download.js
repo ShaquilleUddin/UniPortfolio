@@ -113,4 +113,13 @@ function downloadFiles(filePaths) {
         window.open(url, '_blank');
       });
     }
-  });  
+
+  // Final Project in Computer Science
+  document.getElementById('finalProjectButton').addEventListener('click', function () {
+    if (confirm('Do you want to download all Final Project in Computer Science files?')) {
+      downloadFiles([
+        './Downloads/CalculockedFinalReport.pdf',
+      ]);
+    }
+  });
+});
